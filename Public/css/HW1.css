@@ -1,0 +1,34 @@
+table,td,th{
+    border: 1px solid black;
+
+}
+
+table{
+    border-collapse: collapse;
+    width:100%;
+    max-width: 500px;
+
+}
+
+h1{
+  text-align: center;
+  font-style: italic;
+  color: firebrick;
+}
+
+nav{
+
+      padding: 6px;
+      color: black;
+      font-family: sans-serif;
+  }
+
+th{
+   text-align: center;
+
+}
+
+thead{
+    background-color: firebrick;
+    color:white;
+    }
