@@ -32,3 +32,47 @@ thead{
     background-color: firebrick;
     color:white;
     }
+
+    .placeholder {
+      background-color: rgb(200,200,225);
+      border: 2px solid rgb(50, 50, 100);
+    }
+    section{
+      border: 3px solid rgb(0,57,99);
+      text-align: center;
+    }
+
+    .data{
+      font-size: 18pt;
+      font-weight: bold;
+      color: rgb(0,91,148);
+
+    }
+    section h2 {
+      font-size: 10pt;
+      color: black;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+
+ul.list {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 3pt;
+  overflow: hidden;
+  background-color: Firebrick;
+  color: white;
+}
+li a.list {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li.list {
+    float: left;
+    color: white;
+}
