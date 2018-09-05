@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
 
 
-  <link rel="stylesheet" href="/Users/leeenkoff/Documents/GitHub/ds-hw1-lenkoff5/Public/css/HW1.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" href="/Users/leeenkoff/Documents/GitHub/ds-hw1-lenkoff5/Public/css/HW1.css">
+<head>
 <style>
   h1{
     text-align: center;
@@ -30,16 +30,20 @@
 
 </div>
 <div class="container-fluid">
-    <table>
+    <table id="taskTable" class="table striped-table-sm">
         <thead>
 
 
             <tr>
-                <th>Hobbies</th>
-                <th>Salaries</th>
-                <th>Favorite Foods</th>
-                <th>Places Traveled</th>
-                <th>Date Traveled</th>
+                <th>&nbsp;</th>
+                <th>Task</th>
+                <th>Type</th>
+                <th>Size</th>
+                <th>Assigned Team</th>
+                <th>Status</th>
+                <th>Started</th>
+                <th>Hours</th>
+                <th>% Complete</th>
             </tr>
 
         </thead>
@@ -47,57 +51,68 @@
         <tbody>
 
             <tr>
-                <td>Basketball</td>
-                <td>$5,000</td>
+                <td></td>
+                <td>Create Dashboard</td>
                 <td>Mashed Potatoes</td>
                 <td>Australia</td>
                 <td>09/15/2015</td>
+                <td>Australia</td>
+                <td>09/15/2015</td>
+                <td>40</td>
+                <td>90%</td>
             </tr>
 
             <tr>
-                <td>Watching baseball</td>
-                <td>$7,000</td>
+                <td></td>
+                <td>Update Page</td>
                 <td>Sushi</td>
                 <td>Poland</td>
-                <td>13/07/2009
-
-                </td>
+                <td>13/07/2009</td>
+                <td>Australia</td>
+                <td>09/15/2015</td>
+                <td>60</td>
+                <td>90%</td>
             </tr>
 
             <tr>
-                <td>Xbox</td>
-                <td>$70,000</td>
+                <td></td>
+                <td>Fix Medium</td>
                 <td>Cheese</td>
                 <td>Japan</td>
-                <td>01/01/2001
-
-                </td>
+                <td>01/01/2011</td>
+                <td>Australia</td>
+                <td>09/15/2015</td>
+                <td>57</td>
+                <td>90%</td>
             </tr>
 
             <tr>
-                <td>Golf</td>
-                <td>$100,000</td>
+                <td></td>
+                <td>Post Page</td>
                 <td>Tacos</td>
                 <td>Canada</td>
-                <td>05/25/1998
-
-                </td>
+                <td>05/25/1998</td>
+                <td>Australia</td>
+                <td>09/15/2015</td>
+                <td>50</td>
+                <td>90%</td>
             </tr>
 
             <tr>
-                <td>Wine</td>
-                <td>$1,000</td>
+                <td></td>
+                <td>Download Data</td>
                 <td>Turkey</td>
                 <td>France</td>
-                <td>12/19/2017
-
-                </td>
+                <td>12/19/2017</td>
+                <td>Australia</td>
+                <td>09/15/2015</td>
+                <td>45</td>
+                <td>90%</td>
             </tr>
         </tbody>
 
-
     </table>
-
+  </div>
 
     <form>
   <div class="form-group">
@@ -129,5 +144,11 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+//tablesort plugin from http://tristen.ca/tablesort/demo/
+<script src="tablesort.min.js"></script>
+  <script>
+        new Tablesort(document.getElementById('taskTable'));
+  </script>
+
 </body>
 </html>
