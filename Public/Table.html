@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/HW1.css">
+<head>
+<style>
+  h1{
+    text-align: center;
+    font-style: italic;
+    color: firebrick;
+  }
+  </style>
+</head>
+
+
+<body>
+
+  <div class="container-fluid">
+  <h1>Lee Enkoff</h1>
+
+
+  <ul class="list">
+  <li class="list"><a href="index.html" class="list">About</a></li>
+  <li class="list"><a href="Interests.html" class="list">Interests</a></li>
+  <li class="list"><a href="Baseball.html" class="list">Baseball</a></li>
+
+</ul>
+
+</div>
+<div class="container-fluid">
+    <table id="taskTable" class="table striped-table-sm">
+        <thead>
+
+
+            <tr>
+                <th>&nbsp;</th>
+                <th>Task</th>
+                <th>Type</th>
+                <th>Size</th>
+                <th>Assigned Team</th>
+                <th>Status</th>
+                <th>Started</th>
+                <th>Hours</th>
+                <th>% Completed</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td></td>
+                <td>Create Dashboard</td>
+                <td>Data</td>
+                <td>S</td>
+                <td>Bears</td>
+                <td>Ended</td>
+                <td>09/15/2015</td>
+                <td>40</td>
+                <td>90%</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Update Page</td>
+                <td>Sushi</td>
+                <td>L</td>
+                <td>Cardinals</td>
+                <td>In Progress</td>
+                <td>09/15/2015</td>
+                <td>60</td>
+                <td>90%</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Fix Medium</td>
+                <td>Cheese</td>
+                <td>M</td>
+                <td>Rams</td>
+                <td>Ended</td>
+                <td>09/15/2015</td>
+                <td>57</td>
+                <td>90%</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Post Page</td>
+                <td>Tacos</td>
+                <td>M</td>
+                <td>Colts</td>
+                <td>Ended</td>
+                <td>09/15/2015</td>
+                <td>50</td>
+                <td>90%</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Download Data</td>
+                <td>Turkey</td>
+                <td>L</td>
+                <td>Penguins</td>
+                <td>Started</td>
+                <td>09/15/2015</td>
+                <td>45</td>
+                <td>90%</td>
+            </tr>
+        </tbody>
+
+    </table>
+  </div>
+
+    <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">New Task</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Task">
+    <small id="emailHelp" class="form-text text-muted"></small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Type</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Type">
+  </div>
+  <div class="form-group">
+    <label for="Date">New Date</label>
+    <input type="date" class="form-control" id="Date" placeholder="Date">
+  </div>
+  <div class="form-group">
+    <label for="">Size</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Size">
+    <small id="emailHelp" class="form-text text-muted"></small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Assigned Team</label>
+    <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Team">
+    <small id="emailHelp" class="form-text text-muted"></small>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Finished</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<!--tablesort plugin from http://tristen.ca/tablesort/demo//-->
+<script src="js/tablesort.min.js"></script>
+  <script>
+        new Tablesort(document.getElementById('taskTable'));
+  </script>
+
+</body>
+</html>
