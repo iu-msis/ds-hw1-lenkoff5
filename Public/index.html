@@ -28,7 +28,10 @@
 <img src="{{ user.picture.large }}"/>
   <ul>
 
-    <li>Address: {{ user.location.street }}</li>
+    <li>Address:
+      {{ user.location.street }},
+      {{user.location.city}},
+      {{user.location.state}}</li>
     <li> Age: {{ user.dob.age }}</li>
     <li>Email Address: <a href="mailto:{{user.email}}">{{user.email}}</a></li>
 
