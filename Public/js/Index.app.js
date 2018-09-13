@@ -64,6 +64,13 @@ data: {
   }
 
 },
+
+computed: {
+  age: function () {
+    return moment().diff(moment(this.user.dob.date), 'years')
+  }
+},
+
   methods: {
 
 fetchuser() {
