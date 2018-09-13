@@ -2,7 +2,7 @@ var indexApp = new Vue({
 el: '#random',
 data: {
 
-  user:
+  admin:
     {
       "gender": '',
       "name": {
@@ -53,7 +53,7 @@ data: {
         "medium": "",
         "thumbnail": ""
       },
-      "nat": "NO"
+      "nat": ""
     },
 
   "info": {
@@ -67,20 +67,20 @@ data: {
 
 computed: {
   age: function () {
-    return moment().diff(moment(this.user.dob.date), 'years')
+    return moment().diff(moment(this.admin.dob.date), 'years')
   },
   date: function() {
-   return moment(this.user.dob.date).format('MMMM Do YYYY')}
+   return moment(this.admin.dob.date).format('MMMM Do YYYY')}
 },
 
   methods: {
 
-fetchuser() {
+fetchadmin() {
   fetch('https://randomuser.me/api/')
   .then( response => response.json())
   //.then(function(response) {return response.json()})
   .then( json => {
-    indexApp.user = json.results[0]})
+    indexApp.admin = json.results[0]})
     .catch(function(err){
     console.log('FETCH returned:');
     console.log(json);
@@ -90,6 +90,6 @@ fetchuser() {
     console.log(err);}
 )}},
 created() {
-  this.fetchuser();
+  this.fetchadmin();
 }
 });
