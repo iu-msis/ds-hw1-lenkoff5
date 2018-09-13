@@ -68,7 +68,9 @@ data: {
 computed: {
   age: function () {
     return moment().diff(moment(this.user.dob.date), 'years')
-  }
+  },
+  date: function() {
+   return moment(this.user.dob.date).format('MMMM Do YYYY')}
 },
 
   methods: {
