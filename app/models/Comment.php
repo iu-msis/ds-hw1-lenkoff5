@@ -4,9 +4,9 @@ class Comment
   public $id;
   public $comment;
 
-  public function __construct($data) {
-    $this->id = intval($data['id']);
-    $this->comment = $data['comment'];
+  public function __construct($row) {
+    $this->id = intval($row['id']);
+    $this->comment = $row['comment'];
   }
   public static function findAll() {
     // 1. Connect to the database
