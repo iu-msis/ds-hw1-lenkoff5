@@ -1,5 +1,5 @@
 <?php
 var_dump($_POST);
-$comments = new Comment($_POST);
-$comments->create();
-echo json_encode($comments);
+$comment = new Comment($_POST);
+$comment->create();
+echo json_encode($comment);
