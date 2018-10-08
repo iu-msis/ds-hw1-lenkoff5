@@ -10,7 +10,7 @@ class Comment
   }
 
   public function create() {
-    $DB = NEW PDO(DB_SERVER, DB_USER, DB_PW);
+    $db = NEW PDO(DB_SERVER, DB_USER, DB_PW);
 
     $sql = 'INSERT INTO Class (comment)
             VAlUES (?)';
@@ -22,15 +22,6 @@ class Comment
 
       $this->id = $db->lastInsertId();
   }
-
-
-
-
-
-
-
-
-
 
   public static function findAll() {
     // 1. Connect to the database
