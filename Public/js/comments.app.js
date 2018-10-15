@@ -33,7 +33,7 @@ var commentsApp = new Vue({
       })
 
       // Reset workForm
-      this.workForm = this.getEmptyCommentForm();
+      this.commentForm = this.getEmptyCommentForm();
     },
 
 
@@ -48,7 +48,7 @@ var commentsApp = new Vue({
   created () {
     // Do data fetch
     const url = new URL(window.location.href);
-    
+
 
 
     // Populate workForm with default values
@@ -64,5 +64,5 @@ var commentsApp = new Vue({
     })
 
   }
-}}
 }
+)

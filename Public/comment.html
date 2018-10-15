@@ -38,16 +38,12 @@
               <hr>
                 <h3>Add comment</h3>
 
-                <form @submit.prevent="handleWorkForm">
+                <form @submit.prevent="handleCommentForm">
                   <div class="form-group row">
-                    <label for="comment" class="col-sm-1 col-form-label">ID: </label>
-                    <div class="col-sm-3">
-                      <input type="text" id="c.id" v-model="workForm.start" class="form-control" required>
-                    </div>
 
                     <label for="comment" class="col-sm-1 col-form-label">Comment: </label>
                     <div class="col-sm-3">
-                      <input type="text" id="c.id" v-model="workForm.start" class="form-control" required>
+                      <input type="text" id="c.id" v-model="commentForm.start" class="form-control" required>
                     </div>
 
                   </div>
