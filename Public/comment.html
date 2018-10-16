@@ -42,10 +42,9 @@
 
                 <form @submit.prevent="handleCommentForm" id ="newCommentForm">
                   <div class="form-group row">
-
                     <label for="comment" class="col-sm-1 col-form-label">Comment: </label>
                     <div class="col-sm-3">
-                      <input type="text" id="comment" class="form-control" required>
+                      <input type="text" id="comment" v-model="commentForm.comment" class="form-control" required>
                     </div>
 
                   </div>

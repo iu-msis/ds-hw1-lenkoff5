@@ -16,6 +16,7 @@ var commentsApp = new Vue({
       console.error(err);
     })
   },
+
   handleCommentForm(e) {
 
     // TODO: Check validity in a better way
@@ -46,8 +47,7 @@ var commentsApp = new Vue({
 
   getEmptyCommentForm() {
     return {
-      id: this.comment.id,
-      comment: moment().format('HH:mm'),
+      comment: ''
     }
   }
 },
